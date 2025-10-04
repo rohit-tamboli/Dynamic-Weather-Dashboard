@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome for humidity & wind icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Weather Dashboard</h1>
+      <p>Real-time weather info for your location or any city</p>
+    </header>
+ 
+    <div class="search-box"> 
+      <input type="text" id="cityInput" placeholder="Enter city name...">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="weather-card" id="weatherCard">
+      <div class="location" id="location"></div>
+      <img id="weatherIcon" class="weather-icon" alt="Weather Icon">
+      <div class="temp" id="temp"></div>
+      <div class="description" id="description"></div>
+
+      <div class="details">
+        <div><i class="fas fa-tint"></i> <span id="humidity"></span>%</div>
+        <div><i class="fas fa-wind"></i> <span id="wind"></span> m/s</div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Design By Rohit</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
